@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    ::selection {
+        @apply bg-white text-black;
+    }
+
+    html {
+        @apply bg-black text-white scroll-smooth;
+    }
+
+    p {
+        @apply lg:text-xl;
+    }
+}
+
+@layer components {
+    .dm-sans-regular {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    .bebas-neue-regular {
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+    }
+}
