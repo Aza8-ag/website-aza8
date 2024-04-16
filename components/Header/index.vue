@@ -8,14 +8,13 @@
 
             <!-- social links -->
             <div class="hidden md:flex items-center">
-                <p>Entre em contato</p>
                 <!-- whatsapp -->
                 <a href="https://wa.me/5511964684269" class="ml-4">
-                    <img src="@/assets/images/icon-whatsapp.svg" alt="Whatsapp (logo)" title="Whatsapp (logo)">
+                    <img src="@/assets/images/icon-whatsapp.svg" alt="Whatsapp (logo)" title="Whatsapp (logo)" class="max-w-[45px]">
                 </a>
                 <!-- instagram -->
                 <a href="https://www.instagram.com/aza8.ag" class="ml-2">
-                    <img src="@/assets/images/icon-instagram.svg" alt="Instagram (logo)" title="Instagram (logo)">
+                    <img src="@/assets/images/icon-instagram.svg" alt="Instagram (logo)" title="Instagram (logo)" class="max-w-[45px]">
                 </a>
             </div>
         </div>

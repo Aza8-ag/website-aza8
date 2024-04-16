@@ -36,13 +36,13 @@ export default defineNuxtConfig({
         { hid: "canonical", rel: "canonical", href: 'https://www.aza8.com.br/' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
-    }
+    },
   },
   modules: ['@nuxtjs/google-fonts'],
   googleFonts: {
     families: {
       'DM Sans': true,
       'Bebas Neue': true,
-    }
-  }
+    },
+  },
 })

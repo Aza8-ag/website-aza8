@@ -13,14 +13,19 @@
 
       <!-- cases section -->
       <section>
-        <p>Cases</p>
+        <Cases />
       </section>
     </div>
   </NuxtLayout>
 </template>
 
 <script>
+import Cases from '@/components/Cases/index.vue'
+
 export default {
+  components: {
+    Cases
+  }
 }
 </script>
 
