@@ -3,13 +3,14 @@
         :effect="'cards'"
         :grabCursor="true"
         :modules="modules"
-        class="mySwiper"
+        v-if="cases.length"
     >
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+        <swiper-slide v-for="x in cases">
+            <img v-if="x.type == 'image'" :src="x.path" alt="">
+            <video v-if="x.type == 'video'" autoplay loop muted>
+                <source :src="x.path" type="video/mp4">
+            </video>
+        </swiper-slide>
     </swiper>
 </template>
 
@@ -24,67 +25,65 @@
             Swiper,
             SwiperSlide,
         },
+        data () {
+            return {
+                cases: [
+                    { path: '/cases/VIDEO_BLONDME_1.mp4', type: 'video' },
+                    { path: '/cases/ABC_PEGGY.jpg', type: 'image' },
+                    { path: '/cases/bonacure_01.jpg', type: 'image' },
+                    { path: '/cases/bonacure_02.jpg', type: 'image' },
+                    { path: '/cases/VIDEO_LA_BELA_1.mp4', type: 'video' },
+                    { path: '/cases/BONACURE_03.jpg', type: 'image' },
+                    { path: '/cases/DIGI+_02.jpg', type: 'image' },
+                    { path: '/cases/DIGI+.jpg', type: 'image' },
+                    { path: '/cases/osis.jpg', type: 'image' },
+                    { path: '/cases/poster_LA_BELA.jpg', type: 'image' },
+                    { path: '/cases/tres_coracoes_01.jpg', type: 'image' },
+                    { path: '/cases/tres_coracoes_02.jpg', type: 'image' },
+                    { path: '/cases/ULTRA.jpg', type: 'image' },
+                ]
+            }
+        },
         setup() {
             return {
                 modules: [EffectCards],
-            };
+            }
         },
     };
 </script>
 
-<style>
+<style lang="scss">
 .swiper {
-    width: 240px;
-    height: 320px;
-}
+    @apply mt-10 md:mt-0;
+    @apply max-w-[190px];
 
-.swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-}
+    @media screen and (min-width: 375px) {
+        @apply max-w-[320px];
+        .swiper-slide {
+            @apply max-w-[250px] max-h-[250px];
+        }
+    }
 
-.swiper-slide:nth-child(1n) {
-    background-color: rgb(206, 17, 17);
-}
+    @media screen and (min-width: 768px) {
+        @apply max-w-[500px];
+        .swiper-slide {
+            @apply max-w-[450px] max-h-[450px];
+        }
+    }
 
-.swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
-}
+    @media screen and (min-width: 1165px) {
+        @apply max-w-[650px];
+        .swiper-slide {
+            @apply max-w-[550px] max-h-[550px];
+        }
+    }
 
-.swiper-slide:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
-}
+    .swiper-slide {
+        @apply w-full h-full flex items-center justify-center rounded-[30px];
 
-.swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
-}
-
-.swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
-}
-
-.swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
-}
-
-.swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
+        img, video {
+            @apply max-w-full;
+        }
+    }
 }
 </style>
