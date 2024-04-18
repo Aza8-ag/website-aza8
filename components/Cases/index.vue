@@ -1,29 +1,43 @@
 <template>
-    <swiper
-        :effect="'cards'"
-        :grabCursor="true"
-        :modules="modules"
-        :pagination="true"
-        :navigation="true"
-        :allowTouchMove="false"
-        v-if="cases.length"
-    >
-        <swiper-slide v-for="x in cases">
-            <img v-if="x.type == 'image'" :src="x.path" alt="" loading="lazy">
-            <video v-if="x.type == 'video'" autoplay loop muted loading="lazy">
-                <source :src="x.path" type="video/mp4">
-            </video>
-        </swiper-slide>
-    </swiper>
+    <div class="cases">
+        <swiper
+            :pagination="{
+                clickable: true,
+                dynamicBullets: true,
+                enabled: false,
+            }"
+            :modules="modules"
+            :slidesPerView="'auto'"
+            :spaceBetween="25"
+            :centeredSlides="true"
+            :navigation="{
+                nextEl: '.next-case',
+                prevEl: '.prev-case'
+            }"
+            v-if="cases.length"
+        >
+            <swiper-slide v-for="x in cases">
+                <img v-if="x.type == 'image'" :src="x.path" alt="">
+                <video v-if="x.type == 'video'" autoplay loop muted>
+                    <source :src="x.path" type="video/mp4">
+                </video>
+            </swiper-slide>
+        </swiper>
+
+        <div class="swiper-button-prev prev-case"></div>
+        <div class="swiper-button-next next-case"></div>
+
+        <div class="grad left"></div>
+        <div class="grad right"></div>
+    </div>
 </template>
 
 <script>
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import 'swiper/css';
-    import 'swiper/css/effect-cards';
     import 'swiper/css/pagination';
     import 'swiper/css/navigation';
-    import { EffectCards, Pagination, Navigation } from 'swiper/modules';
+    import { Pagination, Navigation } from 'swiper/modules';
 
     export default {
         components: {
@@ -51,53 +65,60 @@
         },
         setup() {
             return {
-                modules: [EffectCards, Pagination, Navigation],
+                modules: [Pagination, Navigation],
             }
         },
     };
 </script>
 
 <style lang="scss">
-.swiper {
-    @apply mt-16 mb-10 md:mt-0 md:mb-0 flex items-center justify-center pl-9;
-    @apply max-w-[280px];
+.cases {
+    @apply relative mt-20 md:mt-0 mb-10 md:mb-0;
 
-    .swiper-button-prev { @apply -ml-6; &:after { @apply text-white; } }
-    .swiper-button-next { @apply -mr-5; &:after { @apply text-white; } }
-
-    @media screen and (min-width: 375px) {
-        @apply max-w-[320px];
+    // swiper wrapper
+    .swiper {
+        @apply w-full h-full;
+        @apply md:max-w-[600px] md:max-h-[600px];
+        @apply lg:max-w-[800px];
     }
 
-    @media screen and (min-width: 768px) {
-        @apply max-w-[500px];
-        .swiper-slide {
-            @apply max-w-[450px] max-h-[450px];
-        }
-        .swiper-button-prev { @apply -ml-14; }
-    }
-
-    @media screen and (min-width: 1165px) {
-        @apply max-w-[650px];
-        .swiper-slide {
-            @apply max-w-[550px] max-h-[550px];
-        }
-        .swiper-button-prev { @apply -ml-16; }
-    }
-
+    // swiper slide item
     .swiper-slide {
-        @apply max-w-[80%] max-h-[80%] w-full h-full flex items-center justify-center rounded-[30px];
-
+        @apply max-w-full max-h-full;
+        @apply md:max-w-[600px] md:max-h-[600px];
         img, video {
-            @apply max-w-full;
+            @apply rounded-[30px];
         }
     }
 
-    .swiper-pagination {
-        @apply -mb-14;
-        .swiper-pagination-bullet {
-            @apply bg-white;
+    // swiper buttons
+    .swiper-button-prev.prev-case,
+    .swiper-button-next.next-case {
+        &:after {
+            @apply text-slate-100;
         }
+    }
+
+    .swiper-button-prev.prev-case { @apply lg:-ml-16; }
+    .swiper-button-next.next-case { @apply lg:-mr-16; }
+
+    // swiper pagination
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            @apply text-slate-100;
+        }
+    }
+
+    // gradients
+    .grad {
+        @apply absolute top-0 h-full w-16 z-10;
+
+        &.left {
+            @apply left-0;
+            background: linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,0) 100%);
+        }
+
+        &.right { @apply right-0; }
     }
 }
 </style>

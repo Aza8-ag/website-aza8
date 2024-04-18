@@ -12,7 +12,7 @@
       </section>
 
       <!-- cases section -->
-      <section class="">
+      <section>
         <Cases />
       </section>
     </div>
