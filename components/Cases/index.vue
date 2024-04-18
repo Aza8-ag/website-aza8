@@ -26,9 +26,6 @@
 
         <div class="swiper-button-prev prev-case"></div>
         <div class="swiper-button-next next-case"></div>
-
-        <div class="grad left"></div>
-        <div class="grad right"></div>
     </div>
 </template>
 
@@ -79,7 +76,6 @@
     .swiper {
         @apply w-full h-full;
         @apply md:max-w-[600px] md:max-h-[600px];
-        @apply lg:max-w-[800px];
     }
 
     // swiper slide item
@@ -107,18 +103,6 @@
         .swiper-pagination-bullet {
             @apply text-slate-100;
         }
-    }
-
-    // gradients
-    .grad {
-        @apply absolute top-0 h-full w-16 z-10;
-
-        &.left {
-            @apply left-0;
-            background: linear-gradient(90deg, rgba(0,0,0,1), rgba(0,0,0,0) 100%);
-        }
-
-        &.right { @apply right-0; }
     }
 }
 </style>
