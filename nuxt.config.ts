@@ -23,17 +23,16 @@ export default defineNuxtConfig({
         // open graph
         { hid: 'og:title', property: 'og:title', content: 'O mundo muda. A Aza8 muda com você.' },
         { hid: 'og:description', property: 'og:description', content: 'Aza8 é uma agência de comunicação com foco em tecnologia. Do conceito à experiência, criamos marcas que evoluem com o mundo a nossa volta.' },
-        { hid: 'og:image', property: 'og:image', content: 'https://www.aza8.com.br/share.gif' },
-        { hid: 'og:image', property: 'og:image', itemprop: 'image', content: 'https://aza8-website.vercel.app/share.jpg' },
-        { hid: 'og:image:type', property: 'og:image:type', content: 'https://www.aza8.com.br/share.gif' },
-        { hid: 'og:url', property: 'og:url', content: 'https://www.aza8.com.br/share.gif' },
+        { hid: 'og:image', property: 'og:image', itemprop: 'image', content: 'https://www.aza8.com.br/share.jpg' },
+        { hid: 'og:image:type', property: 'og:image:type', content: 'https://www.aza8.com.br/share.jpg' },
+        { hid: 'og:url', property: 'og:url', content: 'https://www.aza8.com.br/share.jpg' },
         { hid: 'og:url', property: 'og:url', content: 'https://www.aza8.com.br' },
 
         // twitter card
         { hid: "twitter:title", name: "twitter:title", content: 'O mundo muda. A Aza8 muda com você.' },
         { hid: "twitter:url", name: "twitter:url", content: 'https://www.aza8.com.br' },
         { hid: 'twitter:description', name: 'twitter:description', content: 'Aza8 é uma agência de comunicação com foco em tecnologia. Do conceito à experiência, criamos marcas que evoluem com o mundo a nossa volta.' },
-        { hid: "twitter:image", name: "twitter:image", content: 'https://www.aza8.com.br/share.gif' },
+        { hid: "twitter:image", name: "twitter:image", content: 'https://www.aza8.com.br/share.jpg' },
       ],
       link: [
         { hid: "canonical", rel: "canonical", href: 'https://www.aza8.com.br' },
@@ -41,7 +40,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/google-fonts', 'nuxt-simple-robots'],
   googleFonts: {
     families: {
       'DM Sans': true,
