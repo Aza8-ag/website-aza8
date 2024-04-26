@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Aza8',
+      title: 'Aza8 Agência',
       htmlAttrs: {
         lang: "pt",
       },
