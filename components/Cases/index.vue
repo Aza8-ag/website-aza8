@@ -4,7 +4,8 @@
             :pagination="{
                 clickable: true,
                 dynamicBullets: true,
-                enabled: false,
+                enabled: true,
+                el: '.custom-pagination',
             }"
             :modules="modules"
             :slidesPerView="'auto'"
@@ -13,6 +14,11 @@
             :navigation="{
                 nextEl: '.next-case',
                 prevEl: '.prev-case'
+            }"
+            :breakpoints="{
+                '1440': {
+                    spaceBetween: 60,
+                },
             }"
             v-if="cases.length"
         >
@@ -24,8 +30,10 @@
             </swiper-slide>
         </swiper>
 
-        <div class="swiper-button-prev prev-case"></div>
-        <div class="swiper-button-next next-case"></div>
+        <div class="swiper-button-prev prev-case" />
+        <div class="swiper-button-next next-case" />
+
+        <div class="swiper-pagination custom-pagination" />
     </div>
 </template>
 
@@ -90,18 +98,27 @@
     // swiper buttons
     .swiper-button-prev.prev-case,
     .swiper-button-next.next-case {
+        transform: scale(.8);
         &:after {
             @apply text-slate-100;
         }
+        &:not(.swiper-button-disabled) {
+            opacity: 0.85;
+            transition: all .1s ease-in;
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 
-    .swiper-button-prev.prev-case { @apply lg:-ml-16; }
-    .swiper-button-next.next-case { @apply lg:-mr-16; }
+    .swiper-button-prev.prev-case { @apply xl:-ml-14; }
+    .swiper-button-next.next-case { @apply xl:-mr-14; }
 
     // swiper pagination
-    .swiper-pagination {
+    .custom-pagination {
+        @apply -mb-10;
         .swiper-pagination-bullet {
-            @apply text-slate-100;
+            @apply bg-white;
         }
     }
 }
