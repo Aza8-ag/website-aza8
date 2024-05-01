@@ -52,19 +52,20 @@
         data () {
             return {
                 cases: [
-                    { path: '/cases/VIDEO_BLONDME_1.mp4', type: 'video' },
-                    { path: '/cases/ABC_PEGGY.jpg', type: 'image' },
-                    { path: '/cases/bonacure_01.jpg', type: 'image' },
-                    { path: '/cases/bonacure_02.jpg', type: 'image' },
-                    { path: '/cases/VIDEO_LA_BELA_1.mp4', type: 'video' },
-                    { path: '/cases/BONACURE_03.jpg', type: 'image' },
-                    { path: '/cases/DIGI+_02.jpg', type: 'image' },
-                    { path: '/cases/DIGI+.jpg', type: 'image' },
-                    { path: '/cases/osis.jpg', type: 'image' },
-                    { path: '/cases/poster_LA_BELA.jpg', type: 'image' },
-                    { path: '/cases/tres_coracoes_01.jpg', type: 'image' },
-                    { path: '/cases/tres_coracoes_02.jpg', type: 'image' },
-                    { path: '/cases/ULTRA.jpg', type: 'image' },
+                    { path: '/cases/01.jpg', type: 'image' },
+                    { path: '/cases/02.jpg', type: 'image' },
+                    { path: '/cases/03.mp4', type: 'video' },
+                    { path: '/cases/04.jpg', type: 'image' },
+                    { path: '/cases/05.jpg', type: 'image' },
+                    { path: '/cases/06.jpg', type: 'image' },
+                    { path: '/cases/07.mp4', type: 'video' },
+                    { path: '/cases/08.jpg', type: 'image' },
+                    { path: '/cases/09.jpg', type: 'image' },
+                    { path: '/cases/10.jpg', type: 'image' },
+                    { path: '/cases/11.jpg', type: 'image' },
+                    { path: '/cases/12.jpg', type: 'image' },
+                    { path: '/cases/13.jpg', type: 'image' },
+                    { path: '/cases/14.jpg', type: 'image' },
                 ]
             }
         },
