@@ -57,15 +57,14 @@
                     { path: '/cases/03.mp4', type: 'video' },
                     { path: '/cases/04.jpg', type: 'image' },
                     { path: '/cases/05.jpg', type: 'image' },
-                    { path: '/cases/06.jpg', type: 'image' },
-                    { path: '/cases/07.mp4', type: 'video' },
+                    { path: '/cases/06.mp4', type: 'video' },
+                    { path: '/cases/07.jpg', type: 'image' },
                     { path: '/cases/08.jpg', type: 'image' },
                     { path: '/cases/09.jpg', type: 'image' },
                     { path: '/cases/10.jpg', type: 'image' },
                     { path: '/cases/11.jpg', type: 'image' },
                     { path: '/cases/12.jpg', type: 'image' },
                     { path: '/cases/13.jpg', type: 'image' },
-                    { path: '/cases/14.jpg', type: 'image' },
                 ]
             }
         },
