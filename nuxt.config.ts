@@ -47,4 +47,7 @@ export default defineNuxtConfig({
       'Bebas Neue': true,
     },
   },
+  routeRules: {
+    '/Apresentacao_2025': { redirect: 'https://docs.google.com/presentation/d/104y9JBBPEppArKXLx5yYUz6TqFJTmvmI/edit?usp=sharing&ouid=113478512269353753930&rtpof=true&sd=true' },
+  },
 })

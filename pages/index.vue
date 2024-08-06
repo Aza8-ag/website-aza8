@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout>
+  <NuxtLayout :name="'home'">
     <div class="container flex flex-col md:flex-row items-center md:items-start md:justify-between lg:justify-start">
       <!-- content section -->
       <section class="text-center md:text-left w-full">
