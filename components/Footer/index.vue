@@ -15,7 +15,7 @@
             <div class="flex items-center mt-24 md:mt-0 justify-between">
                 <div class="flex items-center">
                     <img src="@/assets/images/icon-loading.gif" alt="Imagem ilustrativa" class="mr-2 max-w-[24px]">
-                    <p class="text-xs md:text-sm">Site oficial <br>em desenvolvimento</p>
+                    <p class="text-xs md:text-sm font-light">Site oficial <br>em desenvolvimento</p>
                 </div>
 
                 <!-- social links -->

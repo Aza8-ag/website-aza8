@@ -20,7 +20,7 @@ module.exports = {
       padding: '1rem',
     },
     fontFamily: {
-      'sans': ['DM Sans', 'serif'],
+      'sans': ['Be Vietnam Pro', 'serif'],
     }
   },
   plugins: [],
