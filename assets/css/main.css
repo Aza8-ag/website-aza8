@@ -8,7 +8,7 @@
     }
 
     html {
-        @apply bg-[#FF0129] text-white scroll-smooth;
+        @apply bg-black text-white scroll-smooth;
     }
 
     p {
@@ -17,5 +17,12 @@
 
     * {
         letter-spacing: 1px;
+    }
+}
+
+@layer components {
+    .bebas-neue-regular {
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
     }
 }

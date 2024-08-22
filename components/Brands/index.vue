@@ -2,9 +2,9 @@
     <div class="brands">
         <ClientOnly>
             <Vue3Marquee :duration="40">
-                <a class="brands__item" :href="brand.link" target="_blank" v-for="brand in brands" :key="brands.id">
+                <span class="brands__item" v-for="brand in brands" :key="brands.id">
                     <img :src="brand.url" :alt="brand.name">
-                </a>
+                </span>
             </Vue3Marquee>
         </ClientOnly>
     </div>
@@ -32,6 +32,13 @@ export default {
                 { name: 'Pamcary – Seguros Pamcary para você e sua empresa', url: '/brands/logo-pamcary.svg', link: 'https://www1.gps-pamcary.com.br/' },
                 { name: 'Ri Happy Brinquedos - Quanto mais Brincadeira, Melhor!', url: '/brands/logo-rihappy.svg', link: 'https://www.rihappy.com.br/' },
                 { name: 'Schwarzkopf Professional', url: '/brands/logo-schwarzkopf.svg', link: 'https://www.clubedocabelopro.com.br/' },
+
+                { name: '', url: '/brands/logo-combo-logistica.png', link: '' },
+                { name: '', url: '/brands/logo-dia.png', link: '' },
+                { name: '', url: '/brands/logo-galo-portugal.png', link: '' },
+                { name: '', url: '/brands/logo-lexus.png', link: '' },
+                { name: '', url: '/brands/logo-porto.png', link: '' },
+                { name: '', url: '/brands/logo-semorin.png', link: '' },
             ]
         }
     }

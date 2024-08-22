@@ -45,6 +45,7 @@ export default defineNuxtConfig({
     preload: true,
     families: {
       'Be Vietnam Pro': [300, 400],
+      'Bebas Neue': [400],
     },
   },
   routeRules: {
