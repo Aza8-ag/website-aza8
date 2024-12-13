@@ -29,6 +29,7 @@ export default {
                 { name: 'Pamcary - Seguros Pamcary para você e sua empresa', url: '/brands/logo-pamcary.svg', link: 'https://www1.gps-pamcary.com.br/' },
                 { name: 'Ri Happy Brinquedos - Quanto mais Brincadeira, Melhor!', url: '/brands/logo-rihappy.svg', link: 'https://www.rihappy.com.br/' },
 
+                
                 // { name: 'Artec Revestimentos', url: '/brands/logo-artec.svg', link: 'https://artecrevestimentos.com.br/' },
                 // { name: 'KeyPay - O melhor ecossistema de pagamentos!', url: '/brands/logo-keypay.svg', link: 'https://www.keypay.com.br/' },
                 // { name: 'Latem - A casa do mestre', url: '/brands/logo-latem.svg', link: 'https://www.lojaslatem.com.br/' },
