@@ -8,7 +8,7 @@
           A AZA8 MUDA <br>
           COM VOCÊ.
         </h1>
-        <p class="max-w-[350px] mx-auto md:ml-0 leading-[1.25] font-light">Do growth à experiência, criamos marcas que evoluem com o mundo a nossa volta.</p>
+        <p class="max-w-[410px] mx-auto md:ml-0 leading-[1.25] font-light">A Aza8 é uma boutique de comunicação que transforma marcas em pontos decisivos de crescimento.</p>
       </section>
 
       <!-- cases section -->

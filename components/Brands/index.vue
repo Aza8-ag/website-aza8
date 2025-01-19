@@ -1,7 +1,7 @@
 <template>
     <div class="brands">
         <ClientOnly>
-            <Vue3Marquee :duration="40">
+            <Vue3Marquee :duration="40" :gradient=true :gradientColor="[0, 0, 0]" gradientLength="10%">
                 <span class="brands__item" v-for="brand in brands" :key="brands.id">
                     <img :src="brand.url" :alt="brand.name">
                 </span>
@@ -28,19 +28,6 @@ export default {
                 { name: 'Kawahara Takano | Arquitetura de Negócios', url: '/brands/logo-kt.svg', link: 'https://kt.com.br/' },
                 { name: 'Pamcary - Seguros Pamcary para você e sua empresa', url: '/brands/logo-pamcary.svg', link: 'https://www1.gps-pamcary.com.br/' },
                 { name: 'Ri Happy Brinquedos - Quanto mais Brincadeira, Melhor!', url: '/brands/logo-rihappy.svg', link: 'https://www.rihappy.com.br/' },
-
-                
-                // { name: 'Artec Revestimentos', url: '/brands/logo-artec.svg', link: 'https://artecrevestimentos.com.br/' },
-                // { name: 'KeyPay - O melhor ecossistema de pagamentos!', url: '/brands/logo-keypay.svg', link: 'https://www.keypay.com.br/' },
-                // { name: 'Latem - A casa do mestre', url: '/brands/logo-latem.svg', link: 'https://www.lojaslatem.com.br/' },
-                // { name: 'Malwee: Moda feminina, masculina, plus size e infantil', url: '/brands/logo-malwee.svg', link: 'https://www.malwee.com.br/' },
-
-                // { name: '', url: '/brands/logo-combo-logistica.png', link: '' },
-                // { name: '', url: '/brands/logo-dia.png', link: '' },
-                // { name: '', url: '/brands/logo-galo-portugal.png', link: '' },
-                // { name: '', url: '/brands/logo-lexus.png', link: '' },
-                // { name: '', url: '/brands/logo-porto.png', link: '' },
-                // { name: '', url: '/brands/logo-semorin.png', link: '' },
             ]
         }
     }
@@ -51,7 +38,7 @@ export default {
 .brands {
     @apply w-full max-w-3xl;
     &__item {
-        @apply mx-1 p-3;
+        @apply mx-2 md:mx-4 p-3;
 
         img {
             @apply w-full h-full max-w-[85px] max-h-[60px];

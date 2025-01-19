@@ -5,15 +5,10 @@
             <Brands />
 
             <div class="flex items-center mt-24 md:mt-0 justify-between">
-                <div class="flex items-center">
-                    <img src="@/assets/images/icon-loading.gif" alt="Imagem ilustrativa" class="mr-2 max-w-[24px]">
-                    <p class="text-xs md:text-sm font-light">Site oficial <br>em desenvolvimento</p>
-                </div>
-
                 <!-- social links -->
                 <div class="flex md:hidden items-center">
                     <!-- whatsapp -->
-                    <a href="https://wa.me/5511964684269" class="ml-10 max-w-[28px]">
+                    <a href="https://wa.me/5511964684269" class="max-w-[28px]">
                         <img src="@/assets/images/icon-whatsapp.svg" alt="Whatsapp (logo)" title="Whatsapp (logo)">
                     </a>
                     <!-- instagram -->

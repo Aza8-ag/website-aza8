@@ -8,6 +8,7 @@ module.exports = {
     './nuxt.config.{js,ts}',
     './app.vue',
   ],
+  plugins: [],
   theme: {
     screens: {
       'sm': '640px',
@@ -23,5 +24,4 @@ module.exports = {
       'sans': ['Be Vietnam Pro', 'serif'],
     }
   },
-  plugins: [],
 }

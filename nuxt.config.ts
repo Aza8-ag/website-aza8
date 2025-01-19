@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: 'Do growth à experiência, criamos marcas que evoluem com o mundo a nossa volta.' },
 
         // open graph
-        { hid: 'og:title', property: 'og:title', content: 'Somos o lugar onde ideias se transformam em resultados' },
+        { hid: 'og:title', property: 'og:title', content: 'O mundo muda, a Aza8 muda com você.' },
         { hid: 'og:description', property: 'og:description', content: 'Do growth à experiência, criamos marcas que evoluem com o mundo a nossa volta.' },
         { hid: 'og:image', property: 'og:image', itemprop: 'image', content: 'https://www.aza8.com.br/share.jpg' },
         { hid: 'og:image:type', property: 'og:image:type', content: 'https://www.aza8.com.br/share.jpg' },
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         { hid: 'og:url', property: 'og:url', content: 'https://www.aza8.com.br' },
 
         // twitter card
-        { hid: "twitter:title", name: "twitter:title", content: 'Somos o lugar onde ideias se transformam em resultados' },
+        { hid: "twitter:title", name: "twitter:title", content: 'O mundo muda, a Aza8 muda com você.' },
         { hid: "twitter:url", name: "twitter:url", content: 'https://www.aza8.com.br' },
         { hid: 'twitter:description', name: 'twitter:description', content: 'Do growth à experiência, criamos marcas que evoluem com o mundo a nossa volta.' },
         { hid: "twitter:image", name: "twitter:image", content: 'https://www.aza8.com.br/share.jpg' },
