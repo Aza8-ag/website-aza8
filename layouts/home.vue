@@ -13,6 +13,9 @@ import Footer from '@/components/Footer/index.vue'
 import Header from '@/components/Header/index.vue'
 
 export default {
+  data() {
+    return {}
+  },
   components: {
     Footer, Header
   }

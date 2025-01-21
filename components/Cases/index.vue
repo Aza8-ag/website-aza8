@@ -38,47 +38,47 @@
 </template>
 
 <script>
-    import { Swiper, SwiperSlide } from 'swiper/vue';
-    import 'swiper/css';
-    import 'swiper/css/pagination';
-    import 'swiper/css/navigation';
-    import { Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 
-    export default {
-        components: {
-            Swiper,
-            SwiperSlide,
-        },
-        data () {
-            return {
-                cases: [
-                    { path: '/cases/01.mp4', type: 'video' },
-                    { path: '/cases/02.jpg', type: 'image' },
-                    { path: '/cases/03.png', type: 'image' },
-                    { path: '/cases/04.mp4', type: 'video' },
-                    { path: '/cases/05.mp4', type: 'video' },
-                    { path: '/cases/06.png', type: 'image' },
-                    { path: '/cases/07.png', type: 'image' },
-                    { path: '/cases/08.mp4', type: 'video' },
-                    { path: '/cases/09.jpg', type: 'image' },
-                    { path: '/cases/10.png', type: 'image' },
-                    { path: '/cases/11.png', type: 'image' },
-                    { path: '/cases/12.png', type: 'image' },
-                    { path: '/cases/13.jpg', type: 'image' },
-                    { path: '/cases/14.jpg', type: 'image' },
-                    { path: '/cases/15.png', type: 'image' },
-                    { path: '/cases/16.mp4', type: 'video' },
-                    { path: '/cases/17.mp4', type: 'video' },
-                    { path: '/cases/18.jpg', type: 'image' },
-                ]
-            }
-        },
-        setup() {
-            return {
-                modules: [Pagination, Navigation],
-            }
-        },
-    };
+export default {
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    data() {
+        return {
+            cases: [
+                { path: '/cases/01.mp4', type: 'video' },
+                { path: '/cases/02.jpg', type: 'image' },
+                { path: '/cases/03.png', type: 'image' },
+                // { path: '/cases/04.mp4', type: 'video' },
+                // { path: '/cases/05.mp4', type: 'video' },
+                { path: '/cases/06.png', type: 'image' },
+                { path: '/cases/07.png', type: 'image' },
+                // { path: '/cases/08.mp4', type: 'video' },
+                { path: '/cases/09.jpg', type: 'image' },
+                { path: '/cases/10.png', type: 'image' },
+                { path: '/cases/11.png', type: 'image' },
+                { path: '/cases/12.png', type: 'image' },
+                { path: '/cases/13.jpg', type: 'image' },
+                { path: '/cases/14.jpg', type: 'image' },
+                { path: '/cases/15.png', type: 'image' },
+                // { path: '/cases/16.mp4', type: 'video' },
+                // { path: '/cases/17.mp4', type: 'video' },
+                { path: '/cases/18.jpg', type: 'image' },
+            ]
+        }
+    },
+    setup() {
+        return {
+            modules: [Pagination, Navigation],
+        }
+    },
+};
 </script>
 
 <style lang="scss">
@@ -95,8 +95,10 @@
     .swiper-slide {
         @apply max-w-full max-h-full;
         @apply md:max-w-[600px] md:max-h-[600px];
-        img, video {
-            @apply rounded-[30px];
+
+        img,
+        video {
+            @apply rounded-[30px] max-w-full;
         }
     }
 
@@ -104,24 +106,33 @@
     .swiper-button-prev.prev-case,
     .swiper-button-next.next-case {
         transform: scale(.8);
+
         &:after {
             @apply text-slate-100;
         }
+
         &:not(.swiper-button-disabled) {
             opacity: 0.85;
             transition: all .1s ease-in;
+
             &:hover {
                 opacity: 1;
             }
         }
     }
 
-    .swiper-button-prev.prev-case { @apply xl:-ml-14; }
-    .swiper-button-next.next-case { @apply xl:-mr-14; }
+    .swiper-button-prev.prev-case {
+        @apply xl:-ml-14;
+    }
+
+    .swiper-button-next.next-case {
+        @apply xl:-mr-14;
+    }
 
     // swiper pagination
     .custom-pagination {
         @apply -mb-10;
+
         .swiper-pagination-bullet {
             @apply bg-white;
         }

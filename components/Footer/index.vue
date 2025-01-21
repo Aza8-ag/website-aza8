@@ -25,9 +25,12 @@
 import Brands from '@/components/Brands/index.vue'
 
 export default {
-  components: {
-    Brands,
-  }
+    data() {
+        return {}
+    },
+    components: {
+        Brands,
+    }
 }
 </script>
 

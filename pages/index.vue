@@ -23,11 +23,13 @@
 import Cases from '@/components/Cases/index.vue'
 
 export default {
+  data() {
+    return {}
+  },
   components: {
     Cases
   }
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
