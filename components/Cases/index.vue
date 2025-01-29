@@ -55,11 +55,11 @@ export default {
                 { path: '/cases/01.mp4', type: 'video' },
                 { path: '/cases/02.jpg', type: 'image' },
                 { path: '/cases/03.png', type: 'image' },
-                // { path: '/cases/04.mp4', type: 'video' },
-                // { path: '/cases/05.mp4', type: 'video' },
+                { path: '/cases/04.mp4', type: 'video' },
+                { path: '/cases/05.mp4', type: 'video' },
                 { path: '/cases/06.png', type: 'image' },
                 { path: '/cases/07.png', type: 'image' },
-                // { path: '/cases/08.mp4', type: 'video' },
+                { path: '/cases/08.mp4', type: 'video' },
                 { path: '/cases/09.jpg', type: 'image' },
                 { path: '/cases/10.png', type: 'image' },
                 { path: '/cases/11.png', type: 'image' },
@@ -67,8 +67,8 @@ export default {
                 { path: '/cases/13.jpg', type: 'image' },
                 { path: '/cases/14.jpg', type: 'image' },
                 { path: '/cases/15.png', type: 'image' },
-                // { path: '/cases/16.mp4', type: 'video' },
-                // { path: '/cases/17.mp4', type: 'video' },
+                { path: '/cases/16.mp4', type: 'video' },
+                { path: '/cases/17.mp4', type: 'video' },
                 { path: '/cases/18.jpg', type: 'image' },
             ]
         }
@@ -83,7 +83,7 @@ export default {
 
 <style lang="scss">
 .cases {
-    @apply relative mt-20 md:mt-0 mb-10 md:mb-0;
+    @apply relative mt-20 md:mt-0 mb-10 md:mb-0 max-w-full;
 
     // swiper wrapper
     .swiper {
