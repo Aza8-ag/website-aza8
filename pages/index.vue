@@ -3,7 +3,7 @@
     <div class="container flex flex-col md:flex-row items-center md:items-center md:justify-between lg:justify-start">
       <!-- content section -->
       <section class="text-center md:text-left w-full">
-        <h1 class="bebas-neue-regular text-6xl xl:text-7xl xl:mt-6 mb-8 md:mb-20">
+        <h1 class="bebas-neue-regular text-6xl xl:text-7xl xl:mt-6 mb-8 md:mb-16">
           O MUNDO MUDA. <br>
           A AZA8 MUDA <br>
           COM VOCÊ.

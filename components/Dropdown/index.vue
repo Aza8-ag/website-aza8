@@ -39,11 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .v-enter-active {
-    transition: opacity .5s ease;
-}
-
-.v-leave-active {
-    transition: opacity .1s ease;
+    transition: opacity .2s ease;
 }
 
 .v-enter-from,

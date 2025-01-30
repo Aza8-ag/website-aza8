@@ -71,9 +71,11 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 300;
 
     h3 {
         @apply text-2xl md:text-[1.675rem] mb-14;
+        font-weight: 400;
     }
 
     p {

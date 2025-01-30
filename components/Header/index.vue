@@ -2,16 +2,19 @@
     <div>
         <header class="mb-5 md:mb-0">
             <div class="container flex items-start justify-center md:justify-between flex-col md:flex-row">
-                <!-- logo -->
-                <NuxtLink to="/">
-                    <img src="@/assets/images/logo-aza8.svg" alt="Aza8 (logo)" title="Aza8 (logo)">
-                </NuxtLink>
+                <div class="flex flex-row items-end gap-4 justify-between">
+                    <!-- logo -->
+                    <NuxtLink to="/">
+                        <img src="@/assets/images/logo-aza8.svg" alt="Aza8 (logo)" title="Aza8 (logo)">
+                    </NuxtLink>
+                    <Waiting class="lg:hidden" />
+                </div>
 
-                <div class="flex md:items-center gap-5 md:gap-14 xl:gap-18 flex-col md:flex-row"> 
-                    <Waiting class="my-2" />
+                <div class="flex md:items-end gap-5 md:gap-14 xl:gap-18 flex-col md:flex-row"> 
+                    <Waiting class="hidden lg:inline-flex my-1" />
 
                     <!-- menu -->
-                    <ul class="ml-auto flex flex-row gap-4 md:gap-6">
+                    <ul class="ml-auto mt-12 mb-4 md:my-0 flex flex-row gap-4 md:gap-6">
                         <li v-for="item in menu" :key="item.id">
                             <button @click="useModal(item.id)" class="border-b-[1px] py-1 border-transparent hover:border-white transition-all">
                                 {{ item.name }}
